@@ -28,3 +28,56 @@ Aquest mòdul amplia un exemple senzill de llista de tasques per incloure les se
     <field name="name">Bibliotecario</field>
     <field name="users" eval="[(4, ref('base.user_admin'))]" />
 </record>
+
+
+Activitat 02 - Biblioteca de Còmics
+Descripció
+Aquest mòdul amplia l'exemple d'una biblioteca de còmics per permetre la gestió de socis i exemplars de còmics per a préstecs.
+
+Models Implementats
+Soci: Emmagatzema nom, cognom i identificador.
+Còmic: Serveix com a referència per a la informació dels còmics.
+Exemplar: Registra a qui està prestat un còmic, amb dates de préstec i devolució.
+Validacions
+La data de préstec no pot ser posterior a la data actual.
+La data de tornada no pot ser anterior a la data actual.
+Activitat 03 - Gestió d'Hospital
+Descripció
+Aquest mòdul implementa una solució per gestionar pacients, metges i diagnòstics en un hospital.
+
+Models Implementats
+Pacient
+
+Nom i cognoms
+Símptomes
+Metge
+
+Nom i cognoms
+Número de col·legiat
+Atenció
+
+Relació entre metges i pacients
+Diagnòstic
+Relacions
+Un pacient pot ser atès per diversos metges.
+Un metge pot atendre diversos pacients.
+Activitat 04 - Gestió de Cicles Formatius
+Descripció
+Aquest mòdul gestiona els cicles formatius d'un institut, incloent-hi alumnes, professors i mòduls.
+
+Models Implementats
+Cicle Formatiu
+
+Representa un cicle formatiu en un institut.
+Mòdul
+
+Relacionat amb el cicle formatiu, alumnes matriculats i el professor que l'imparteix.
+Alumne
+
+Relacionat amb els mòduls matriculats.
+Professor
+
+Relacionat amb els mòduls que imparteix.
+Seguretat
+Els usuaris amb el rol "Director" poden modificar tots els registres.
+Els usuaris amb rol "Professor" poden veure (només lectura) les dades dels professors.
