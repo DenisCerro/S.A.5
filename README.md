@@ -23,13 +23,7 @@ Aquest mòdul amplia un exemple senzill de llista de tasques per incloure les se
 - **Nova propietat**: `data_assignada` per a les tasques.
 - **Seguretat**: Configuració de grups i permisos bàsics.
 
-```xml
-<record id="grupo_bibliotecario" model="res.groups">
-    <field name="name">Bibliotecario</field>
-    <field name="users" eval="[(4, ref('base.user_admin'))]" />
-</record>
-
-
+  
 Activitat 02 - Biblioteca de Còmics
 Descripció
 Aquest mòdul amplia l'exemple d'una biblioteca de còmics per permetre la gestió de socis i exemplars de còmics per a préstecs.
